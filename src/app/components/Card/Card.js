@@ -1,22 +1,42 @@
 import React from "react";
-import "./styles.css";
+import styled from "react-emotion"
 
-const Card = ({
-  cardWrap,
-  imgWrap,
-  src,
-  textWrap,
-  title,
-}) => (
-  <div className={`card-wrap ${cardWrap}`}>
-      <div className={`card-text-wrap ${textWrap}`}>
-          <h3>{title}</h3>
-      </div>
-    <div className={`card-img-wrap ${imgWrap}`}>
-      <img src={src} />
-    </div>
+const Wrapper = styled('div')`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: white;
+  align-items: center;
+  font-size: 1vmax;
+  margin: 5px;
+  padding: 1em;
+`
+const ImageBox = styled('div')`
+  display: flex;
+  justify-content: center;
+  margin:5px;
+`
 
-  </div>
+const Image = styled('img')`
+  width: 7em;
+  height: 7em;
+`
+const Title = styled('p')`
+  display: flex;
+  font-family: Courier Cyrillic;
+
+  text-align: center;
+  font-size: 1.1em;
+  color: #0074B3;
+  justify-content: center;
+  margin: 0;
+`
+
+const Card = ({src,title}) => (
+  <Wrapper>
+    <ImageBox> <Image src = {src} /> </ImageBox>
+    <Title> {title} </Title>
+  </Wrapper>
 );
 
 export default Card;
