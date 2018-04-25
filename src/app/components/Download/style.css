@@ -1,0 +1,66 @@
+.dwn-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.fireButton-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+
+}
+.dwn-button{
+
+    font-family: Courier Cyrillic;
+    background-color: #62AFD9;
+    border: none;
+    color: #F2F2F2;
+    padding: 15px 32px;
+    text-align: center;
+    display: inline-block;
+    font-size: 32px;
+
+}
+.response-section{
+
+    font-family: Courier Cyrillic;
+    color: #004C74;;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.response-section > h3{
+    font-size: 19px;
+    font-family: Courier Cyrillic;
+    color: #004C74;
+}
+
+.response-section > h5{
+    font-size: 15px;
+    font-family: Courier Cyrillic;
+    color: #004C74;
+}
+
+
+@media screen and (max-width: 480px) {
+
+  
+    .dwn-h1 {
+    width: auto;
+    font-size: 33px;
+    text-align: center;
+    }
+
+    .response-section{
+        width: auto;
+    }
+    .dwn-h3 {   
+        font-size: 30px;
+        text-align: center; 
+    }
+
+
+}
