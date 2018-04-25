@@ -14,15 +14,10 @@
     "react-scripts": "1.1.1"
   },
   "scripts": {
-    "precommit": "lint-staged",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
-  },
-
-  "lint-staged": {
-    "*.js": ["eslint --fix", "git add"]
   },
 
   "proxy": "http://127.0.0.1:5000"
