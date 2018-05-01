@@ -1,7 +1,7 @@
 import React from "react";
 import { Switch, Route } from "react-router-dom";
 
-import Navbar from "../components/Navbar/Navbar";
+import Header from "../components/Header/Header";
 
 import LandingPage from "../pages/LandingPage";
 import Generate from "../pages/Generate";
@@ -18,13 +18,13 @@ const styles = {
 
 const PrimaryLayout = () => (
   <div style={styles}>
-    <Navbar />
+    <Header />
     <Switch>
       <Route exact path="/" component={LandingPage} />
       <Route path="/generating" component={Generate} />
       <Route path="/last_page" component={Download} />
     </Switch>
-      <Footer/>
+    <Footer/>
 
   </div>
 );

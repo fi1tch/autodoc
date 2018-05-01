@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import style from "./styles.js";
 import axios from "axios";
 import { createBrowserHistory } from 'history';
 import { Redirect } from "react-router-dom";
