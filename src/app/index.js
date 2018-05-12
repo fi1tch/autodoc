@@ -6,9 +6,7 @@ import PrimaryLayout from "./layouts/PrimaryLayout";
 
 const App = () => (
   <BrowserRouter>
-    <div>
       <PrimaryLayout />
-    </div>
   </BrowserRouter>
 );
 
